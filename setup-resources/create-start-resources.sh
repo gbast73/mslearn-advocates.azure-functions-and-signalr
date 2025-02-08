@@ -87,7 +87,7 @@ az cosmosdb sql container create \
     --account-name $COMSOSDB_NAME \
     --database-name stocksdb \
     --name stocks \
-    --partition-key-path /symbol
+    --partition-key-path "//symbol"
 
 printf "Get storage connection string\n"
 
